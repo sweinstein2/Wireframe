@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="HomePage.css">
+</head>
+<body style="background-color:#b3b3b3;">
+<div class="container">
+	<div class="row">
+  	<div class="col-sm-4">
+  		<h3 id="TheAnswer" href="HomePage.html">The Answer</h3>
+  	</div>
+  	<div class="col-sm-8">
+      <div class="Menu">
+  		<ul class="nav nav-pills">
+  			<li role="presentation" class="active"><a href="HomePage.html">Home</a></li>
+  			<li role="presentation"><a href="SubmitInfo.html">Submit Info</a></li>
+        <li role="presentation"><a href="AboutUs.html">About Us</a></li>
+      </ul>
+          <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Categoires
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+        <li><a href="#">Animals</a></li>
+        <li><a href="Automobiles.html">Automobiles</a></li>
+        <li><a href="#">Languages</a></li>
+        <li><a href="#">Mathematics</a></li>
+        <li><a href="#">Sciences</a></li>
+        </ul>
+      </div>
+    </div>
+  	</div>
+  	</div>
+<hr>
+  <div class="col-sm-12">
+	<div class="jumbotron">
+      <center>
+  		<h1>Find The Answer Today!</h1>
+  		<p>We strive to make everybody's day just a little easier, with the help of your knowledge.</p>
+      <p><a class="btn btn-primary btn-lg" href="SignUp.html" role="button">Sign Up Now</a></p>
+      </center>
+	</div>
+  <center><h3>Our Most Popular Categories</h3></center>
+  <hr>
+  </div>
+	<div class="row">
+  		<div class="col-sm-6">
+  		<h4><a href="#">Animals</a></h4>
+  		<p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+  		<h4><a href="Automobiles.html">Automobiles</a></h4>
+  		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+  		<h4><a href="#">Languages</a></h4>
+  		<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+  		</div>
+  		<div class="col-sm-6">
+  		<h4><a href="#">Mathematics</a></h4>
+  		<p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+  		<h4><a href="#">Sciences</a></h4>
+  		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+  		<h4>Have a question you want answered?</h4>
+  		<input type="Question" class="form-control" id="exampleInputEmail1" placeholder="Ex: How do I make Blondies?">
+      <button type="button" class="btn btn-default" id="Submit">Submit</button>
+  		</div>
+	</div>
+	<hr>
+<center>
+  <nav id="links">
+    <a href="HomePage.html">
+      Home
+    </a>
+    |
+    <a href="SubmitInfo.html">
+      Submit Info
+    </a>
+    |
+    <a href="AboutUs.html">
+      About Us
+    </a>  
+  </nav> 
+  </center>
+	<p>&#9400; 2016 The Answer, Inc.</p>
+</div>
+
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBB-oCJMdJsr77a4sPxHqzyNrK_sWC_zpI",
+    authDomain: "the-answer-48c9d.firebaseapp.com",
+    databaseURL: "https://the-answer-48c9d.firebaseio.com",
+    storageBucket: "the-answer-48c9d.appspot.com",
+    messagingSenderId: "61218632662"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>
